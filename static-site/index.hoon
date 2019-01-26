@@ -15,11 +15,17 @@
       ;div.col-sm-6
         ;h2#doc.mt-10(style "display: none;"): empty
         ;input#title.mb-2(style "display:none;");
-        ;button#cancel.bg-white.black.h-font(style "display:none;")
-          ;span.text-500: Cancel
-        ==
-        ;button#save.bg-black.white.h-font(style "display:none;")
-          ;span.text-500: Save
+        ;div.row.justify-start
+          ;div
+            ;button#save.bg-black.white(style "display:none;")
+              ;span.text-500: Save
+            ==
+          ==
+          ;div
+            ;button#cancel.bg-white.black(style "display:none;")
+              ;span.text-500: Cancel
+            ==
+          ==
         ==
         ;textarea#collab;
       ==
