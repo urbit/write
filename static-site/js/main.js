@@ -76,7 +76,8 @@ window.onload = function() {
   let app = document.getElementById("title");
   let collab = document.getElementById("collab");
 
-  collab.addEventListener("keyup", () => {
+  collab.addEventListener("keyup", (e) => {
+    console.log(e);
     window.api.pareto(window.app, {text: collab.value});   
   });
 
