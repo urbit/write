@@ -1,0 +1,15 @@
+.border-white {
+  border-color: white;
+}
+
+
+
+.bl-1{
+  border-left-style: solid;
+  border-left-width: 1rem;
+}
+
+.br-1{
+  border-right-style: solid;
+  border-right-width: 1rem;
+}

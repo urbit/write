@@ -1,0 +1,12 @@
+ol {
+  counter-reset: section;
+  font-feature-settings: "tnum";
+  list-style-type: none;
+}
+
+ol>li::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+  font-weight: inherit;
+  display: inline;
+}

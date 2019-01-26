@@ -1,0 +1,18 @@
+.menu-show {
+  position: fixed;
+  top:0%;
+  bottom: 0%;
+  width: 100%;
+  z-index: 2;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-hide {
+  visibility: hidden;
+  display: none;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}

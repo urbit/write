@@ -1,0 +1,19 @@
+.bg-gray-dark {
+  background-color: #7F7F7F ;
+}
+.border-gray-dark{
+  border-color: #7F7F7F;
+}
+
+.gray-dark {
+  color: #7F7F7F ;
+}
+
+.shape-gray-dark {
+  background-color: #7F7F7F;
+  border-color: #7F7F7F;
+}
+
+.bg-blue-light {
+  background-color: #CDD8FF;
+}

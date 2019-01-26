@@ -1,0 +1,5 @@
+[submodule "static-site/docs"]
+	path = static-site/docs
+	url = git@github.com:urbit/docs.git
+	branch = master
+	ignore = all

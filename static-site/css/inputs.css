@@ -1,0 +1,10 @@
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 12px;
+  width: 100%;
+  outline: none; }
