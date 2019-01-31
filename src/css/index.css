@@ -1,0 +1,7 @@
+@import 'base.css';
+@import 'page.css';
+
+h1 {
+  color: green;
+  padding: 20px;
+}

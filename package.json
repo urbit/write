@@ -1,0 +1,31 @@
+{
+  "name": "write",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sucrase/gulp-plugin": "^2.0.0",
+    "gulp": "^4.0.0",
+    "gulp-better-rollup": "github:MikeKovarik/gulp-better-rollup#greenkeeper/rollup-0.67.3",
+    "gulp-cssimport": "^6.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-minify": "^3.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-root-import": "^0.2.3",
+    "sucrase": "^3.8.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
