@@ -21832,14 +21832,14 @@
 	    ).then((res) => {
 	      return res.json();
 	    }).then((json) => {
-	      console.log(json);
 	      if (json.beat) {
+	        console.log("beat");
 	        this.poll(seqn, fn);
+	      } else if (json.data) {
+	        fn(json.data.json.data);
+	        this.poll(seqn + 1, fn);
 	      } else {
-	        if (json.data.json.app === window.app) {
-	          fn(json.data.json.data);
-	        }
-	         this.poll(seqn + 1, fn);
+	        console.log("error", json);
 	      }
 	    }).catch((err) => {
 	      console.log(err);
@@ -21894,8 +21894,8 @@
 	    this.setState({ isPathLoaded: true });
 	    this.api.bind("/" + this.state.path, "PUT");
 	    this.api.poll(1, (data) => {
-	      if (data && 'json' in data) {
-	        this.setState({text: data.json.data.text});
+	      if (data && 'text' in data) {
+	        this.setState({text: data.text});
 	      }
 	    });
 

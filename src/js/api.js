@@ -52,14 +52,14 @@ export default class UrbitApi {
     ).then((res) => {
       return res.json();
     }).then((json) => {
-      console.log(json);
       if (json.beat) {
+        console.log("beat");
         this.poll(seqn, fn);
+      } else if (json.data) {
+        fn(json.data.json.data);
+        this.poll(seqn + 1, fn);
       } else {
-        if (json.data.json.app === window.app) {
-          fn(json.data.json.data);
-        }
-         this.poll(seqn + 1, fn);
+        console.log("error", json);
       }
     }).catch((err) => {
       console.log(err);

@@ -49,8 +49,8 @@ class WritePage extends Component {
     this.setState({ isPathLoaded: true });
     this.api.bind("/" + this.state.path, "PUT");
     this.api.poll(1, (data) => {
-      if (data && 'json' in data) {
-        this.setState({text: data.json.data.text});
+      if (data && 'text' in data) {
+        this.setState({text: data.text});
       }
     });
 

@@ -7,7 +7,6 @@
 The following instructions should run any Kamaji-standardized repository in the Tlon ecosystem:
 
 1) Install NVM
-    + See our [Unix / NVM guide](./guides/unix-nvm.md) (for beginners), or visit the [NVM readme](https://github.com/creationix/nvm) if you know what you're doing.
     + Verify correct Node / NPM versions:
     ```
     $ node -v
@@ -31,3 +30,5 @@ The following instructions should run any Kamaji-standardized repository in the 
     - Example: "/Users/logan/Developer/urbit/build/zod/home"
 3) Copy files into your pier to run them from your Urbit
     - `$ gulp copy-urbit`
+4) Run Pareto app on your Urbit
+    - In your Urbit's dojo, type: `|start %pareto`
