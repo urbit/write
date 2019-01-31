@@ -1,6 +1,1 @@
-node_modules/
-.DS*
-
-*.swp
-
-npm-debug.log
+node_modules
