@@ -1,6 +1,6 @@
 # Write
 
-<img src="https://i.imgur.com/FIv0EOL.png" alt="You want a job, eh?" height="200px" width="364px"/>
+<img src="https://i.imgur.com/LCD6pyn.jpg" alt="You have to die a few times before you can really live." height="122px" width="240px"/>
 
 ## Running the code
 
@@ -27,7 +27,7 @@ The following instructions should run any Kamaji-standardized repository in the 
 
 1) Mount your Urbit's desk to the Unix filesystem
     - In your Urbit's dojo, type: `|mount %`
-2) Write the directory of your mounted desk into the .urbitrc file
+2) Write the path of your mounted desk into the .urbitrc file
     - Example: "/Users/logan/Developer/urbit/build/zod/home"
 3) Copy files into your pier to run them from your Urbit
     - `$ gulp copy-urbit`
